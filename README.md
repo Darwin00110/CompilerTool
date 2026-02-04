@@ -85,8 +85,3 @@ Organização de fluxos de build por meio de interface gráfica
 # 📄 License
 
 Projeto desenvolvido para fins educacionais e de portfólio.
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
->>>>>>> 24ba84a (upload: All Files)
