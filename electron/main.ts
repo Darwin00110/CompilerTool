@@ -35,6 +35,7 @@ function createWindow() {
     icon: path.join(process.env.APP_ROOT, 'icon', 'mdi-gear.ico'),
     webPreferences: {
       preload: path.join(__dirname, 'preload.mjs'),
+      devTools: !!VITE_DEV_SERVER_URL
     },
   })
 
@@ -45,7 +46,6 @@ function createWindow() {
 
   if (VITE_DEV_SERVER_URL) {
     win.loadURL(VITE_DEV_SERVER_URL)
-    win.webContents.openDevTools()
   } else {
     // win.loadFile('dist/index.html')
     win.loadFile(path.join(RENDERER_DIST, 'index.html'))
