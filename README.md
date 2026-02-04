@@ -4,7 +4,7 @@ CompilerTool é uma aplicação desktop focada em compilação de código para b
 
 A ferramenta centraliza, em uma interface gráfica, fluxos de compilação que normalmente exigem múltiplos comandos de terminal, tornando o processo mais direto, organizado e acessível durante o desenvolvimento.
 
-✨ # Features
+# ✨ Features
 
 Compilação de C para:
 
