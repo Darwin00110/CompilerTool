@@ -4,7 +4,7 @@ CompilerTool é uma aplicação desktop focada em compilação de código para b
 
 A ferramenta centraliza, em uma interface gráfica, fluxos de compilação que normalmente exigem múltiplos comandos de terminal, tornando o processo mais direto, organizado e acessível durante o desenvolvimento.
 
-#✨ Features
+# ✨ Features
 
 Compilação de C para:
 
@@ -30,7 +30,7 @@ Orquestração de processos via backend Electron
 
 Comunicação Frontend ↔ Backend utilizando IPC
 
-#🧱 Tech Stack
+# 🧱 Tech Stack
 
 Electron
 
@@ -42,7 +42,7 @@ TypeScript
 
 IPC (Inter-Process Communication)
 
-#📌 # Scope & Limitations
+# 📌 Scope & Limitations
 
 O CompilerTool atua exclusivamente como uma ferramenta de compilação
 
@@ -52,7 +52,7 @@ A geração de .dll está disponível apenas para C e C++
 
 O suporte a Python está limitado à geração de executáveis (.exe)
 
-#▶️ # Development Setup
+# ▶️ Development Setup
 # Install dependencies
 npm install
 
@@ -63,13 +63,13 @@ npm run dev
 Certifique-se de que os compiladores e interpretadores necessários
 (GCC/G++, Python, etc.) estejam corretamente instalados e disponíveis no PATH.
 
-#📦 # Build
+# 📦 Build
 npm run build
 
 
 O instalador será gerado na pasta de saída configurada no projeto.
 
-#🎯 # Project Goal
+# 🎯 Project Goal
 
 Este projeto faz parte do meu portfólio pessoal e tem como objetivo:
 
@@ -81,6 +81,6 @@ Integração entre frontend e backend
 
 Organização de fluxos de build por meio de interface gráfica
 
-#📄 # License
+# 📄 License
 
 Projeto desenvolvido para fins educacionais e de portfólio.
