@@ -1,4 +1,4 @@
-import { app, BrowserWindow, dialog, ipcMain, IpcMainInvokeEvent } from 'electron'
+import { app, BrowserWindow, dialog, ipcMain, IpcMainInvokeEvent, Menu } from 'electron'
 //import { createRequire } from 'node:module'
 import { fileURLToPath } from 'node:url'
 import fs from 'node:fs/promises'
@@ -33,6 +33,7 @@ let win: BrowserWindow | null
 function createWindow() {
   win = new BrowserWindow({
     icon: path.join(process.env.APP_ROOT, 'icon', 'mdi-gear.ico'),
+    autoHideMenuBar: true,
     webPreferences: {
       preload: path.join(__dirname, 'preload.mjs'),
       devTools: !!VITE_DEV_SERVER_URL
@@ -43,7 +44,10 @@ function createWindow() {
   win.webContents.on('did-finish-load', () => {
     win?.webContents.send('main-process-message', (new Date).toLocaleString())
   })
-
+  if (!VITE_DEV_SERVER_URL) {
+    Menu.setApplicationMenu(null)
+    win.setMenuBarVisibility(false)
+  }
   if (VITE_DEV_SERVER_URL) {
     win.loadURL(VITE_DEV_SERVER_URL)
   } else {
