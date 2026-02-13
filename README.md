@@ -85,3 +85,8 @@ Organização de fluxos de build por meio de interface gráfica
 # 📄 License
 
 Projeto desenvolvido para fins educacionais e de portfólio.
+
+# 📷 Pictures 
+<img width="1425" height="860" alt="image" src="https://github.com/user-attachments/assets/8747837f-0723-47df-86be-f2c53be19850" />
+
+
